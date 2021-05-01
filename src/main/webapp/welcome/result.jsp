@@ -10,6 +10,19 @@
 
 <h3>Registration Status</h3>
 
+	<div>
+		${result};
+	</div>
+
+	<div>
+		<a href="/registration">Register New User</a>
+	</div>
+	
+	<div>
+		<a href="/home">Home</a>
+	</div>
+	
+
 <table>
 			<tr>
 				<td>First Name</td>
@@ -26,12 +39,12 @@
 				<td>${userDetails.gender}</td>
 			</tr>
 			
-			<tr>
+			<%-- <tr>
 				<td>Hobbies</td>
 				<td>${userDetails.hobbies[0]},${userDetails.hobbies[1]},${userDetails.hobbies[2]},${userDetails.hobbies[3]}
 				</td>
 				
-			</tr>
+			</tr> --%>
 			
 			<tr>
 				<td>Education</td>

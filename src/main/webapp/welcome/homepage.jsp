@@ -13,6 +13,8 @@
 	
 	<h4><a href="/registration">Click Here for Registration</a></h4>
 	
+	<h4><a href="/retrieveregistered">Click Here for Retrieve List of Registered</a></h4>
+	
 
 </body>
 </html>

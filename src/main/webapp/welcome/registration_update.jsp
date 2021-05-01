@@ -9,50 +9,14 @@
 <meta charset="ISO-8859-1">
 <title>Registration Page</title>
 
+
 </head>
 <body>
-	<form action="/registrationAPI">
-		<%-- <c:if test = "${operation == 'save'}">	 --%>
-			<table>
-				<tr>
-					<td>First Name</td>
-					<td><input type="text" name="firstName"></td>
-				</tr>			
-				<tr>
-					<td>Last Name</td>
-					<td><input type="text" name="lastName"></td>
-				</tr>			
-				<tr>
-					<td>Gender</td>
-					<td>
-						<input type="radio" name="gender" value="Male">Male
-						<input type="radio" name="gender" value="Female">Female
-					</td>
-				</tr>			
-				<!-- <tr>
-					<td>Hobbies</td>
-					<td>
-						<input type="checkbox" name="hobbies" value="Singing">Singing
-						<input type="checkbox" name="hobbies" value="Surfing">Surfing
-						<input type="checkbox" name="hobbies" value="Chatting">Chatting
-						<input type="checkbox" name="hobbies" value="Dancing">Dancing
-					</td>
-				</tr> -->			
-				<tr>
-					<td>Education</td>
-					<td><input type="text" name="education"></td>
-				</tr>			
-				<tr>
-					<td></td>
-					<td align="center"><input type="submit" id="saveButton" value="Submit"/>
-				</tr>		
-			</table>	
-		<%-- </c:if>	 --%>	
+	<form action="/update">
 		
-	<%-- 	<c:if test = "${operation == 'update'}">	
 			<table>
 				<tr>
-					<td><input type="hidden" value="${memberdata.id}"> </td>
+					<td><input type="hidden" name="id" value="${memberdata.id}"> </td>
 				</tr>
 			
 				<tr>
@@ -85,11 +49,10 @@
 				</tr>			
 				<tr>
 					<td></td>
-					<td align="center"><input type="button" id="updateButton" value="Update"/>
+					<td align="center"><input type="submit" id="updateButton" value="Update"/>
 				</tr>		
 			</table>	
-		</c:if>
-		 --%>
+		
 		
 	</form>
 </body>
